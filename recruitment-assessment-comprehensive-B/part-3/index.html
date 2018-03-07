@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+  </script>
+</head>
+
+<body>
+  <h1>Login</h1>
+  <form id="login" action="/login" method="POST">
+    <input type="text" name="password" id="password" placeholder="Secret Password">
+    <button id="submit">submit</button>
+    <a href="/secret">secret page</a>
+  </form>
+  <!-- <script>
+    $('#submit').on('click', function(e) {
+      e.preventDefault();
+      var password = $('#password').val();
+      console.log(password);
+      $.ajax({
+        type: "POST",
+        url: "/login",
+        data: JSON.stringify({ password }),
+        contentType: "application/json; charset=utf-8",
+      });
+    });
+  </script> -->
+  <h1>Store in file</h1>
+  <form id="file" action="/file" method="POST">
+    <textarea type="text" name="text" id="text" placeholder="Write and store in file">
+    </textarea>
+    <button id="send">send to file</button>
+  </form>
+</body>
+</html>

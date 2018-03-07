@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movies</title>
+</head>
+
+<body>
+  <h1>Add a Movie</h1>
+  <form id="addMovie" action="/movies" method="POST">
+    <input type="text" name="title" id="title" placeholder="Title"></input>
+    <input type="text" name="rating" id="rating" placeholder="Rating"></input>
+    <input type="text" name="category" id="category" placeholder="Category"></input>
+    <input type="text" name="awarded" id="awarded" placeholder="Awarded"></input>
+    <input type="text" name="released" id="released" placeholder="Released"></input>
+    <button id="submit" type="submit">submit</button>
+  </form>
+  <h1>Show Movies</h1>
+    <form id="showMovie" action="/movies" method="GET">
+      <button id="submit" type="submit">Show Movies</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "name": "recruitment-comprehensive-b",
+  "version": "1.0.0",
+  "description": "## Summary Show your skills! Here are some skills that all Codesmith graduates should have before moving on. There are 5 parts, each in their own directory. Follow the directions in this README for instructions on each part.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "datejs": "^1.0.0-rc3",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.0",
+    "request": "^2.74.0",
+    "supertest": "^2.0.0",
+    "zombie": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node part-3/main.js",
+    "start-dev": "nodemon part-3/main",
+    "start-dev2": "nodemon part-4/main",
+    "get-test-utils": "node test/get-test-utils.js",
+    "merge": "node test/merge.js",
+    "update-package": "node test/update-package.js",
+    "lint": "node test/lint.js part-1/main.js part-2/main.js part-3/main.js part-4/main.js",
+    "test": "mocha --timeout 5000 -R mocha-email-reporter -O json=test/output.json test/part-1.js test/part-2.js test/part-3.js test/part-4.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodesmithLLC/recruitment-assessment-comprehensive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodesmithLLC/recruitment-assessment-comprehensive/issues"
+  },
+  "homepage": "https://github.com/CodesmithLLC/recruitment-assessment-comprehensive#readme"
+}
