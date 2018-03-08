@@ -29,7 +29,7 @@ module.exports = {
 
   // Delete document on the database collection based on ID //
   deleteTask: (req, res, next) => {
-    Tasks.findOneAndRemove({'_id.$oid': req._id}, (err, doc) => {
+    Tasks.findOneAndRemove({ _id: req.body._id }, (err, doc) => {
       if (err) { 
         return res.send(err)
       }
