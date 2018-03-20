@@ -44,11 +44,11 @@ function functionLocker(predicateFunc, secretFunc) {
 
 function keywordCount(obj, keyword, times = 0) {
   for (let key in obj) {
-    if (typeof obj[key] === 'object') {
-      return keywordCount(obj[key], keyword, times)
-    }
-    else if (obj[key] === keyword) {
+    if (obj[key] === keyword) {
       times += 1
+    }
+    if (typeof obj[key] === 'object') {
+      times = keywordCount(obj[key], keyword, times)
     }
   }
   return times;
