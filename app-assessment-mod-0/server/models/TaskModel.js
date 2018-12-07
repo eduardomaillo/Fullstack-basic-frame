@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const myURI = 'mongodb://test-user:test-user@ds151508.mlab.com:51508/eduardo-test';
+const myURI = 'mongodb://test-user:test-user@dsxxxxxx.mlab.com:xxxx/xxxxxx-test';
 const URI = process.env.MONGO_URI || myURI;
 
 mongoose.connect(URI)
